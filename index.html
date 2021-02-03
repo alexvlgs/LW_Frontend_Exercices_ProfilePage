@@ -1,31 +1,259 @@
+
+
 <!DOCTYPE html>
+<html lang="en" >
 
-<html>
+<head>
 
-  <head>
-    <title>Alex's profile</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/c1d81e9dfe.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
+  <meta charset="UTF-8">
 
-  <body>
+  <title>Hi, I'm Alex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://kit.fontawesome.com/c1d81e9dfe.js" crossorigin="anonymous"></script>
 
-    <div class="card-white">
-      <h1>Hello, I'm Alex</h1>
-      <img src="images/alexli.jpeg" alt="Alex" width=100 id="img-circle">
-      <p>Enjoying learning how to program... and listening to quality music.</p>
-      <a href="https://www.youtube.com/watch?v=B6445JAN5-M&ab_channel=BiscoitoFino" target="_blank" id="btn-blue">This is a really cool song</a>
-    </div>
 
-    <div class="card-white">
-      <h2>Follow me</h2>
-      <ul id="list-inline">
-        <li><a href="https://www.linkedin.com/in/alexvill/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+
+<style>
+@import url('@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@400;600&display=swap');');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #5d676c;
+  font-family: 'Trirong', serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  font-family: 'Trirong', serif;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+ -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+.l-site {
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+  z-index: 1;
+}
+.l-site:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  display: block;
+  background: #3a4043;
+  z-index: 1;
+}
+
+.l-page {
+  position: relative;
+  margin-left: 240px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 1px 0 25px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.l-nav {
+  position: absolute;
+  width: 240px;
+  display: block;
+  background: #3a4043;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.band h1 {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #fff;
+  font-size: 32px;
+}
+.band p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 17px;
+}
+
+.band-container {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 960px;
+  display: table;
+  position: relative;
+  padding: 0 3em;
+}
+
+.band-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3em 0 4em;
+}
+
+.band-a {
+  background: #7FDBFF;
+}
+
+.nav {
+  width: 180px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 30px;
+  overflow: auto;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav li {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  transition: 0.25s;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  display: block;
+  padding: 10px 0;
+}
+.nav .nav-primary {
+  opacity: 1;
+}
+.nav .nav-primary:hover {
+  opacity: 0.7;
+}
+.nav .nav-secondary {
+  opacity: 0.4;
+}
+.nav .nav-secondary:hover {
+  opacity: 0.7;
+}
+
+.blurred-box{
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: #2d8baf;
+  border-radius: 70px;
+  overflow: hidden;
+}
+
+.blurred-box:after{
+ content: '';
+ width: 300px;
+ height: 300px;
+ background: inherit;
+ position: absolute;
+ left: -25px;
+ left position
+ right: 0;
+ top: -25px;
+ top position
+ bottom: 0;
+ box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+ filter: blur(10px);
+}
+
+.user-login-box{
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+  z-index: 1;
+  line-height: 1.2;
+
+}
+.user-login-box > *{
+  display: inline-block;
+  width: 200px;
+}
+
+.user-icon{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(images/alexli.jpeg);
+}
+
+</style>
+
+</head>
+
+<body translate="no" >
+  <div class="l-site">
+  <div class="l-nav">
+    <nav class="nav">
+      <ul>
+        <li class="nav-primary"><a href="#">Home</a></li>
+        <li class="nav-secondary"><a href="https://www.linkedin.com/in/alexvill/" target="_blank">LinkedIn  <i class="fab fa-linkedin"></i></i>
+        <li class="nav-secondary"><a href="https://github.com/alexvlgs" target="_blank">Github  <i class="fab fa-github"></i>
+</a></li>
+</i>
       </ul>
+    </nav>
+  </div>
+  <div class="l-page">
+    <div class="menu">
+      <div class="menu-hamburger"></div>
     </div>
+    <section class="band band-a">
+      <div class="band-container">
+        <div class="band-inner">
+          <div class="blurred-box">
+           <div class="user-login-box">
+    <span class="user-icon"></span>
+    <h1>Hi, I'm Alex</h1>
+      <p>I am learning to code things, like this test page.
+      <br>
+      <br>
+      <em>Welcome <i class="fab fa-mailchimp fa-2x"></i></em></p></br></br></p>
+    </div>
+  </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
 
-  </body>
+</body>
 
 </html>
+
